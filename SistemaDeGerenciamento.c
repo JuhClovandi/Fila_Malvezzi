@@ -39,7 +39,7 @@ void enqueue(Processo** frente, Processo** atras, int id) {
 Processo* dequeue(Processo** frente, Processo** atras) {
     // Verifica se a fila está vazia
     if (*frente == NULL) {
-        printf("\nA fila se encontra vazia!\n");
+        printf("\nA fila (Queue) se encontra vazia!\n");
         return NULL;
     }
 
