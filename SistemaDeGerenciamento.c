@@ -67,12 +67,6 @@ void push(Processo** topo, Processo* processo) {
 
 // Função para desempilhar um processo da pilha
 Processo* pop(Processo** topo) {
-    // Verifica se a pilha está vazia
-    if (*topo == NULL) {
-        printf("A pilha está vazia!\n");
-        return NULL;
-    }
-
     Processo* processoDesempilhado = *topo; // Guarda o processo que será desempilhado (o topo atual da pilha)
     *topo = (*topo)->prox; // Atualiza o ponteiro 'topo' para o próximo processo na pilha
     printf("Processo desempilhado com Identificador de Processo (PID): %d\n", processoDesempilhado->id);
